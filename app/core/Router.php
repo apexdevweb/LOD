@@ -16,7 +16,7 @@ if (isset($_GET['page'])) {
     $page = $decrypted;
   }
 }
-//si jamais la page n'existe pas dans une des clée du tableau indexé on redirige sur le shield automatiquement
+//si jamais la page n'existe pas dans une des clée du tableau indexé on redirige sur le home automatiquement
 if (!array_key_exists($page, AVAILABLE_ROUTES)) {
   $page = 'Home';
 }

@@ -1,8 +1,10 @@
 @use "base/typo";
-@use "components/variable";
-@use "components/placeholders";
-@use "components/mixins";
-@use "layout/grid";
+@use "abstracts/variable";
+@use "abstracts/placeholders";
+@use "abstracts/mixins";
 
-@use "abstract/header";
-@use "abstract/nav";
+@use "layout/header";
+@use "layout/nav";
+@use "layout/footer";
+@use "pages/home";
+@use "pages/drones";
