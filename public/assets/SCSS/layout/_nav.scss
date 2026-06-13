@@ -2,3 +2,17 @@
 @use "../abstracts/variable";
 @use "../abstracts/placeholders";
 @use "../abstracts/mixins";
+
+.mobileViewNavbar {
+  display: block;
+}
+.globale-nav {
+  @extend %globale-size, %reset-marg-pad;
+  &__subctnr {
+    @extend %globale-size, %reset-marg-pad, %flex-column-start;
+    & .nav-el {
+      list-style-type: none;
+      color: #000;
+    }
+  }
+}

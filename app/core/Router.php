@@ -4,6 +4,7 @@ require_once __DIR__ . "/Encryptor.php"; //import de l'encryptor
 // On initialise la navigation autorisé
 const AVAILABLE_ROUTES = [
   'Home' => 'HomeController',
+  'Drones' => 'DronesController',
 ];
 
 //on récupère la page de guard (l'index) → le shield

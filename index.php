@@ -26,7 +26,7 @@ require_once __DIR__ . '/app/config/DataScript.php'; //Import des constantes ave
 </head>
 
 <body>
-  <header class="main__header">
+  <header class="main-header">
     <?php
     require "app/views/partials/_header.php"; //Import du header(barre de navigation etc...) stocké dans une partielle
     ?>
@@ -36,7 +36,7 @@ require_once __DIR__ . '/app/config/DataScript.php'; //Import des constantes ave
     require "public/main.php"; //Import du main(contenu principale) stocké dans un dossier public
     ?>
   </main>
-  <footer class="main__footer">
+  <footer class="main-footer">
     <?php
     require "app/views/partials/_footer.php"; //Import du footer(pied de page) stocké dans une partielle
     ?>
