@@ -1,1 +1,8 @@
 @use "base/typo";
+@use "components/variable";
+@use "components/placeholders";
+@use "components/mixins";
+@use "layout/grid";
+
+@use "abstract/header";
+@use "abstract/nav";

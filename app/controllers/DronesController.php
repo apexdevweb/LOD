@@ -8,6 +8,7 @@ class DronesController
 
     global $scripts_js;
     $scripts_js = [DataScript::MOBILE_MENU];
+    
     require_once __DIR__ . '/../views/layouts/drones.php';
   }
 }
