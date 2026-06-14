@@ -1,1 +1,1 @@
-<h2>Home</h2>
+<h2><?= DataText::NAV_HOME?></h2>

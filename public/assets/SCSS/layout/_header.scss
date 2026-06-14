@@ -35,6 +35,12 @@
     }
     & .header-title__secondary {
       font-size: 1.5rem;
+      font-family: variable.$font-alpha;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+    & .header-title__tertiary {
+      font-size: 1.5rem;
       font-family: variable.$font-beta;
       font-weight: 400;
       letter-spacing: 1px;
