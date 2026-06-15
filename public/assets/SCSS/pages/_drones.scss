@@ -1,3 +1,18 @@
 @use "../layout/header";
 @use "../layout/nav";
 @use "../layout/footer";
+
+.category-container {
+  @extend %reset-marg-pad, %globale-size;
+  &__menu {
+    @extend %flex-column-start, %reset-marg-pad;
+  }
+  &__el {
+    list-style-type: none;
+  }
+  &__link {
+    color: #000;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+}

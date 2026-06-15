@@ -28,19 +28,31 @@
     color: #fff;
     text-align: center;
     & .header-title__primary {
-      font-size: 2.5rem;
+      margin: 0;
+      font-size: 4.1rem;
       font-family: variable.$font-alpha;
       font-weight: 600;
       letter-spacing: 1px;
+      line-height: 50px;
     }
     & .header-title__secondary {
-      font-size: 1.5rem;
+      margin: 0;
+      font-size: 1.2rem;
       font-family: variable.$font-alpha;
       font-weight: 400;
       letter-spacing: 1px;
     }
+    & .header-title__separate {
+      margin-top: 0;
+      height: 8px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+    }
     & .header-title__tertiary {
-      font-size: 1.5rem;
+      margin: 15px;
+      font-size: 1rem;
       font-family: variable.$font-beta;
       font-weight: 400;
       letter-spacing: 1px;

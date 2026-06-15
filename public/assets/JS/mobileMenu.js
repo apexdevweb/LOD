@@ -1,6 +1,7 @@
-const mobileMenu = document.querySelector(".mobile__menu--container");
-const navBar = document.querySelector(".globale__nav--container");
-
-mobileMenu.addEventListener("click", () => {
-  navBar.classList.toggle("mobileMenuView");
-});
+const mobileMenu = document.querySelector(".mobile-menu__container");
+const navBar = document.querySelector(".globale-nav");
+if (mobileMenu && navBar) {
+  mobileMenu.addEventListener("click", () => {
+    navBar.classList.toggle("mobileViewNavbar");
+  });
+}

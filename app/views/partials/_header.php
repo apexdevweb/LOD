@@ -2,6 +2,7 @@
   <hgroupe class="header-container__subctnr">
     <h1 class="header-title__primary"><?= DataText::HEADER_FIRST_TITLE ?></h1>
     <h2 class="header-title__secondary"><?= DataText::HEADER_SECOND_TITLE ?></h2>
+    <hr class="header-title__separate">
     <h3 class="header-title__tertiary"><?= DataText::HEADER_THIRD_TITLE ?></h3>
   </hgroupe>
   <div class="mobile-menu__container">
