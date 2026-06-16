@@ -115,12 +115,24 @@
 }
 
 .home-container {
-  background-color: #000;
+  background-color: #fff;
 }
 .home-container__title {
   margin-top: 0;
   font-size: 2.5rem;
-  color: #fff;
+  color: #000;
+}
+.home-container__droneModel {
+  width: 1440px;
+  height: 900px;
+}
+.home-container__droneWireframe {
+  top: 39%;
+  left: 4.5%;
+  height: 894px;
+  width: 1265px;
+  position: absolute;
+  opacity: 0.3;
 }
 
 .category-container {
