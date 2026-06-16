@@ -4,6 +4,12 @@
 
 .category-container {
   @extend %reset-marg-pad, %globale-size;
+  background-color: #000;
+  &__title {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #fff;
+  }
   &__menu {
     @extend %flex-column-start, %reset-marg-pad;
   }
@@ -11,7 +17,7 @@
     list-style-type: none;
   }
   &__link {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: 0.2s ease-in-out;
   }

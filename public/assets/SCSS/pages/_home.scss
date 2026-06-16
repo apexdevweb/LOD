@@ -1,3 +1,13 @@
 @use "../layout/header";
 @use "../layout/nav";
 @use "../layout/footer";
+
+.home-container {
+  @extend %reset-marg-pad, %globale-size;
+  background-color: #000;
+  &__title {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+}

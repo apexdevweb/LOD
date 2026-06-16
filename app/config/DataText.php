@@ -6,6 +6,7 @@ class DataText
  public const HEADER_THIRD_TITLE = "Drones Market";
  public const NAV_HOME = "Home";
  public const NAV_DRONE_MENU = "Drones";
+ public const NAV_CUSTOM_MENU = "Customizer";
  public const CATEGORY_BEGINERS = "Drones pour débutants (Mini & Micro)";
  public const CATEGORY_VIEWERS = "Drones de prise de vue (Photographie/Vidéo)";
  public const CATEGORY_FPV = "Drones de course et FPV (First Person View)";

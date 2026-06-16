@@ -3,12 +3,12 @@ if (session_status() === PHP_SESSION_NONE) { // Si le status de la session est f
   require __DIR__ . "/app/security/session_secure.php"; // Si la session sécurisé n'est pas démarrer on la lance par rapport à la condition si dessus ↑↑↑
 };
 require_once __DIR__ . "/app/core/Encryptor.php"; // import de la fonction de chiffrement pour URL et diverses données 
-require __DIR__ . "/app/security/csp.php"; // import du standar de sécurité CSP configurer
+// require __DIR__ . "/app/security/csp.php"; // import du standar de sécurité CSP configurer
 header("Strict-Transport-Security: max-age=31536000; includeSubDomains; preload"); //Force le HTTPS pendant 1 an, inclut les sous-domaines
 header("Cache-Control: no-cache, no-store, must-revalidate"); // sécurité maximale garantit la confidentialité de la session, interdit formellement au navigateur d'enregistrer la page sur le disque dur (même dans les fichiers temporaires)
 header("Pragma: no-cache"); // garantit que même sur un vieux système, la page ne sera pas mise en cache.
 header("Expires: 0"); // indique de ne jamais servir cette page à quelqu'un d'autre(défense minimaliste contre la Technique de piratage MIDLE-MEN via le cache) et de toujours venir la chercher à la source (notre serveur).
-header("Content-Security-Policy:" . $csp); // Autorise uniquement les scripts de notre propre domaine (à configurer pour CDN et API)
+// header("Content-Security-Policy:" . $csp); // Autorise uniquement les scripts de notre propre domaine (à configurer pour CDN et API)
 header("X-Frame-Options: DENY"); // Empêche l'affichage de notre site dans une iframe (anti-clickjacking)
 header("X-Content-Type-Options: nosniff"); // Empêche l'interprétation de fichiers MIME non déclarés
 require_once 'app/config/database.php'; //Import de la DB
@@ -43,8 +43,8 @@ require_once __DIR__ . '/app/config/DataScript.php'; //Import des constantes ave
   </footer>
   <!-- ↓↓↓IMPORT DES DIFFERENTS SCRIPTS ET LIENS VIA LES CONTROLLERS↓↓↓ -->
   <?php
-  if (isset($scripts_js) && is_array($scripts_js)) {//On vérifie si la variable existe et si c'est un tableau
-    foreach ($scripts_js as $scripts_path) {//On boucle en foreach pour l'import dynamique
+  if (isset($scripts_js) && is_array($scripts_js)) { //On vérifie si la variable existe et si c'est un tableau
+    foreach ($scripts_js as $scripts_path) { //On boucle en foreach pour l'import dynamique
   ?>
       <script src="<?= $scripts_path ?>"></script>
   <?php

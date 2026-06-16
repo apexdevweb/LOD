@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
-.category-container, .category-container__menu, .globale-nav, .globale-nav__subctnr, .mobile-menu__container, .header-container, .header-container__subctnr {
+.category-container, .category-container__menu, .home-container, .globale-nav, .globale-nav__subctnr, .header-container, .header-container__subctnr {
   margin: 0;
   padding: 0;
 }
 
-.category-container, .globale-nav, .globale-nav__subctnr, .header-container {
+.category-container, .home-container, .globale-nav, .globale-nav__subctnr {
   height: auto;
   width: 100%;
 }
@@ -31,9 +31,13 @@
 }
 
 .mobile-menu__container {
+  position: absolute;
+  top: 1%;
+  left: 95%;
   height: 4vh;
-  width: 12vw;
+  width: 2.5vw;
   background-color: #000;
+  border-radius: 5px;
 }
 .mobile-menu__container:hover {
   cursor: pointer;
@@ -42,13 +46,29 @@
   height: 3px;
   width: 25px;
   background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
 }
 
 .header-container {
-  background: url("../images/drone_wallpapperAbig.png") no-repeat 50% 50%;
-  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  background: url("../images/drone_wallpapperBbig.jpg") no-repeat 50% 50%;
+  background-size: 100%;
+}
+.header-container .uncrn {
+  margin-top: -260px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 1440px;
+  height: 900px;
+  z-index: 0;
+  mix-blend-mode: screen;
 }
 .header-container__subctnr {
+  position: absolute;
   color: #fff;
   text-align: center;
 }
@@ -94,13 +114,34 @@
   display: block;
 }
 
+.home-container {
+  background-color: #000;
+}
+.home-container__title {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.category-container {
+  background-color: #000;
+}
+.category-container__title {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #fff;
+}
 .category-container__el {
   list-style-type: none;
 }
 .category-container__link {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   transition: 0.2s ease-in-out;
+}
+
+a[href*="unicorn.studio?utm_source=public-url"] {
+  display: none !important;
 }
 
 body {

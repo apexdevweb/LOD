@@ -5,6 +5,7 @@ require_once __DIR__ . "/Encryptor.php"; //import de l'encryptor
 const AVAILABLE_ROUTES = [
   'Home' => 'HomeController',
   'Drones' => 'DronesController',
+  'Custom' => 'CustomDroneController',
 ];
 
 //on récupère la page de guard (l'index) → le shield
@@ -38,6 +39,8 @@ if (file_exists($controllerFile)) {
     $app->homePage();
   } elseif ($page === 'Drones') {
     $app->dronesPage();
+  } elseif ($page === 'Custom') {
+    $app->customDronePage();
   }
 } else {
   echo "Controleur introuvable";

@@ -7,7 +7,7 @@ class DronesController
     $dronesManager = new DronesManager();
 
     global $scripts_js;
-    $scripts_js = [DataScript::MOBILE_MENU];
+    $scripts_js = [DataScript::MOBILE_MENU, DataScript::UNCRN];
 
     $drone_category = [
       DataText::CATEGORY_BEGINERS,

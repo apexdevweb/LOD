@@ -2,6 +2,9 @@
 @use "pages/home";
 @use "pages/drones";
 
+a[href*="unicorn.studio?utm_source=public-url"] {
+  display: none !important;
+}
 body {
   margin: 0;
   padding: 0;
