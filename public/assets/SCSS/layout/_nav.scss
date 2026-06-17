@@ -6,11 +6,20 @@
 .globale-nav {
   @extend %globale-size, %reset-marg-pad;
   display: none;
+  border: 5px solid #fff;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #000;
   &__subctnr {
-    @extend %globale-size, %reset-marg-pad, %flex-column-start;
+    @extend %globale-size, %flex-column-start;
+    margin: 0;
+    padding: 5px;
     & .nav-el {
       list-style-type: none;
-      color: #000;
+      &__link {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
   &.mobileViewNavbar {

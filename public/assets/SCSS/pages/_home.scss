@@ -4,7 +4,6 @@
 
 .home-container {
   @extend %reset-marg-pad, %globale-size;
-  background-color: #fff;
   &__title {
     margin-top: 0;
     font-size: 2.5rem;
@@ -12,8 +11,10 @@
   }
   &__wrapper {
     @extend %reset-marg-pad, %globale-size, %flex-column-center;
+    mix-blend-mode: difference;
   }
   &__droneModel {
+    margin: 0;
     width: 1440px;
     height: 900px;
   }
@@ -23,6 +24,6 @@
     height: 894px;
     width: 1265px;
     position: absolute;
-    opacity: 0.4;
+    opacity: 0.3;
   }
 }

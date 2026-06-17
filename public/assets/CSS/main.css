@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
-.category-container, .category-container__menu, .home-container, .home-container__wrapper, .globale-nav, .globale-nav__subctnr, .header-container, .header-container__subctnr {
+.category-container, .category-container__menu, .home-container, .home-container__wrapper, .globale-nav, .header-container, .header-container__subctnr {
   margin: 0;
   padding: 0;
 }
@@ -105,24 +105,36 @@
 
 .globale-nav {
   display: none;
+  border: 5px solid #fff;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #000;
+}
+.globale-nav__subctnr {
+  margin: 0;
+  padding: 5px;
 }
 .globale-nav__subctnr .nav-el {
   list-style-type: none;
-  color: #000;
+}
+.globale-nav__subctnr .nav-el__link {
+  color: #fff;
+  text-decoration: none;
 }
 .globale-nav.mobileViewNavbar {
   display: block;
 }
 
-.home-container {
-  background-color: #fff;
-}
 .home-container__title {
   margin-top: 0;
   font-size: 2.5rem;
   color: #000;
 }
+.home-container__wrapper {
+  mix-blend-mode: difference;
+}
 .home-container__droneModel {
+  margin: 0;
   width: 1440px;
   height: 900px;
 }
@@ -132,22 +144,22 @@
   height: 894px;
   width: 1265px;
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .category-container {
-  background-color: #000;
+  background-color: #fff;
 }
 .category-container__title {
   margin-top: 0;
   font-size: 2.5rem;
-  color: #fff;
+  color: #000;
 }
 .category-container__el {
   list-style-type: none;
 }
 .category-container__link {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
