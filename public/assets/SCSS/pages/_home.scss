@@ -10,16 +10,19 @@
     font-size: 2.5rem;
     color: #000;
   }
+  &__wrapper {
+    @extend %reset-marg-pad, %globale-size, %flex-column-center;
+  }
   &__droneModel {
     width: 1440px;
     height: 900px;
   }
   &__droneWireframe {
     top: 39%;
-    left: 4.5%;
+    left: 17%;
     height: 894px;
     width: 1265px;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.4;
   }
 }

@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
-.category-container, .category-container__menu, .home-container, .globale-nav, .globale-nav__subctnr, .header-container, .header-container__subctnr {
+.category-container, .category-container__menu, .home-container, .home-container__wrapper, .globale-nav, .globale-nav__subctnr, .header-container, .header-container__subctnr {
   margin: 0;
   padding: 0;
 }
 
-.category-container, .home-container, .globale-nav, .globale-nav__subctnr {
+.category-container, .home-container, .home-container__wrapper, .globale-nav, .globale-nav__subctnr {
   height: auto;
   width: 100%;
 }
@@ -16,7 +16,7 @@
   place-content: center space-between;
 }
 
-.mobile-menu__container, .header-container__subctnr {
+.home-container__wrapper, .mobile-menu__container, .header-container__subctnr {
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
@@ -128,11 +128,11 @@
 }
 .home-container__droneWireframe {
   top: 39%;
-  left: 4.5%;
+  left: 17%;
   height: 894px;
   width: 1265px;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .category-container {
