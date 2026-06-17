@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
-.category-container, .category-container__menu, .home-container, .home-container__wrapper, .globale-nav, .header-container, .header-container__subctnr {
+.category-container, .category-container__menu, .home-container, .home-container__mainwrapper, .home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .home-container__mainwrapper .home-article .article-title__container, .home-container__mainwrapper .home-article__subcontainer, .home-container__mainwrapper .home-article__subcontainer .article-detail, .home-container__mainwrapper .home-article__subcontainer .article-detail__firstline, .globale-nav, .header-container, .header-container__subctnr {
   margin: 0;
   padding: 0;
 }
 
-.category-container, .home-container, .home-container__wrapper, .globale-nav, .globale-nav__subctnr {
+.category-container, .home-container, .home-container__mainwrapper, .home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .home-container__mainwrapper .home-article .article-title__container, .home-container__mainwrapper .home-article__subcontainer, .home-container__mainwrapper .home-article__subcontainer .article-detail, .globale-nav, .globale-nav__subctnr {
   height: auto;
   width: 100%;
+}
+
+.home-container__mainwrapper, .home-container__mainwrapper .home-article__subcontainer .article-detail {
+  display: flex;
+  flex-flow: row nowrap;
+  place-items: center;
+  place-content: center space-evenly;
 }
 
 .header-container {
@@ -16,14 +23,14 @@
   place-content: center space-between;
 }
 
-.home-container__wrapper, .mobile-menu__container, .header-container__subctnr {
+.home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .mobile-menu__container, .header-container__subctnr {
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
   place-content: center space-evenly;
 }
 
-.category-container__menu, .globale-nav__subctnr {
+.category-container__menu, .home-container__mainwrapper .home-article .article-title__container, .home-container__mainwrapper .home-article__subcontainer, .globale-nav__subctnr {
   display: flex;
   flex-flow: column nowrap;
   place-items: flex-start;
@@ -56,6 +63,7 @@
   overflow: hidden;
   background: url("../images/drone_wallpapperBbig.jpg") no-repeat 50% 50%;
   background-size: 100%;
+  background-color: #000;
 }
 .header-container .uncrn {
   margin-top: -260px;
@@ -108,7 +116,6 @@
   border: 5px solid #fff;
   background-color: #000;
   border-radius: 5px;
-  box-shadow: 0px 0px 8px #000;
 }
 .globale-nav__subctnr {
   margin: 0;
@@ -130,17 +137,56 @@
   font-size: 2.5rem;
   color: #000;
 }
-.home-container__wrapper {
-  mix-blend-mode: difference;
+.home-container__mainwrapper .home-separate {
+  margin: 5px;
+  height: 65vh;
+  width: 1.2vw;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+}
+.home-container__mainwrapper .home-article .article-title__container .article-title__el {
+  margin: 0;
+  font-family: "Michroma", sans-serif;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 1px;
+  border-bottom: 8px solid #000;
+  font-size: 3rem;
+  text-shadow: 0px 0px 4px #000;
+  width: auto;
+}
+.home-container__mainwrapper .home-article .article-title__container .article-title__el:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.4rem;
+  border: none;
+  text-decoration: overline;
+  text-shadow: none;
+}
+.home-container__mainwrapper .home-article__txt {
+  width: auto;
+  letter-spacing: 1px;
+}
+.home-container__mainwrapper .home-article__subcontainer .article-detail {
+  list-style-type: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.home-container__mainwrapper .home-article__subcontainer .article-detail__firstline {
+  font-size: 1.5rem;
+  font-family: "Zalando Sans Expanded", sans-seriff;
+  font-weight: 900;
+  text-shadow: 0px 0px 3px #000;
 }
 .home-container__droneModel {
+  position: relative;
   margin: 0;
   width: 1440px;
   height: 900px;
 }
 .home-container__droneWireframe {
-  top: 39%;
-  left: 17%;
+  top: 39.5%;
+  left: 5%;
   height: 894px;
   width: 1265px;
   position: absolute;
