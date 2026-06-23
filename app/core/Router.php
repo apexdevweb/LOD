@@ -6,9 +6,11 @@ const AVAILABLE_ROUTES = [
   'Home' => 'HomeController',
   'Drones' => 'DronesController',
   'Custom' => 'CustomDroneController',
+  'Login' => 'LoginController',
+  'Signup' => 'SignupController',
 ];
 
-//on récupère la page de guard (l'index) → le shield
+//on récupère la page home
 $page = 'Home';
 if (isset($_GET['page'])) {
   //si la page est vérifié on chiffre l'url
