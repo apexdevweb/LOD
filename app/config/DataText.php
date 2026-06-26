@@ -2,8 +2,10 @@
 class DataText
 {
  public const HEADER_FIRST_TITLE = "L.O.D";
- public const HEADER_SECOND_TITLE = "Legion of Drones";
+ public const HEADER_SECOND_TITLE = "Land of Drones";
  public const HEADER_THIRD_TITLE = "Drones Market";
+ public const SIGNUP_TEXT = "Signup";
+ public const LOGIN_TEXT = "Login";
  public const NAV_HOME = "Home";
  public const NAV_DRONE_MENU = "Drones";
  public const NAV_CUSTOM_MENU = "Customizer";

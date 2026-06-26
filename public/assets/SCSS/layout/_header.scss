@@ -38,14 +38,18 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 1440px; 
+    width: 1440px;
     height: 900px;
     z-index: 0;
     mix-blend-mode: screen;
   }
-  &__subctnr {
+  &__mainsub {
+    @extend %flex-column-center, %reset-marg-pad, %auto-size;
     position: absolute;
-    @extend %flex-column-center, %reset-marg-pad;
+    z-index: 999;
+  }
+  &__subctnr-A {
+    @extend %flex-column-center, %reset-marg-pad, %auto-size;
     color: #fff;
     text-align: center;
     & .header-title__primary {
@@ -77,6 +81,34 @@
       font-family: variable.$font-beta;
       font-weight: 400;
       letter-spacing: 1px;
+    }
+  }
+  &__subctnr-B {
+    @extend %flex-row-center, %reset-marg-pad;
+    height: 13vh;
+    color: #fff;
+    text-align: center;
+  }
+  &__signup-el {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+  &__login-el {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: #000;
+      text-decoration: underline;
     }
   }
 }

@@ -6,6 +6,10 @@
   height: auto;
   width: 100%;
 }
+%auto-size {
+  height: auto;
+  width: auto;
+}
 %flex-row-center {
   display: flex;
   flex-flow: row nowrap;

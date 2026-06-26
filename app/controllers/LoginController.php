@@ -2,7 +2,7 @@
 require_once __DIR__ . "/../models/LoginManager.php";
 class LoginController
 {
-  public function signupPage()
+  public function loginPage()
   {
     $loginManager = new LoginManager();
 

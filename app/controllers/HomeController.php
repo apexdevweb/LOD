@@ -5,7 +5,7 @@ class HomeController
   public function homePage()
   {
     $homeManager = new HomeManager();
-    
+
     global $scripts_js;
     $scripts_js = [DataScript::MOBILE_MENU, DataScript::UNCRN, DataScript::FONT_AWESOME];
 

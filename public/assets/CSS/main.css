@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Michroma&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap");
-.category-container, .category-container__menu, .home-container, .home-container__mainwrapper, .home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .home-container__mainwrapper .home-article .article-title__container, .home-container__mainwrapper .home-article__subcontainer, .home-container__mainwrapper .home-article__subcontainer .article-detail, .home-container__mainwrapper .home-article__subcontainer .article-detail__firstline, .globale-nav, .header-container, .header-container__subctnr {
+.category-container, .category-container__menu, .home-container, .home-container__mainwrapper, .home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .home-container__mainwrapper .home-article .article-title__container, .home-container__mainwrapper .home-article__subcontainer, .home-container__mainwrapper .home-article__subcontainer .article-detail, .home-container__mainwrapper .home-article__subcontainer .article-detail__firstline, .globale-nav, .header-container, .header-container__mainsub, .header-container__subctnr-A, .header-container__subctnr-B {
   margin: 0;
   padding: 0;
 }
@@ -9,7 +9,12 @@
   width: 100%;
 }
 
-.home-container__mainwrapper, .home-container__mainwrapper .home-article__subcontainer .article-detail {
+.header-container__mainsub, .header-container__subctnr-A {
+  height: auto;
+  width: auto;
+}
+
+.home-container__mainwrapper, .home-container__mainwrapper .home-article__subcontainer .article-detail, .header-container__subctnr-B {
   display: flex;
   flex-flow: row nowrap;
   place-items: center;
@@ -23,7 +28,7 @@
   place-content: center space-between;
 }
 
-.home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .mobile-menu__container, .header-container__subctnr {
+.home-container__mainwrapper__subwrapper, .home-container__mainwrapper .home-article, .mobile-menu__container, .header-container__mainsub, .header-container__subctnr-A {
   display: flex;
   flex-flow: column nowrap;
   place-items: center;
@@ -75,12 +80,15 @@
   z-index: 0;
   mix-blend-mode: screen;
 }
-.header-container__subctnr {
+.header-container__mainsub {
   position: absolute;
+  z-index: 999;
+}
+.header-container__subctnr-A {
   color: #fff;
   text-align: center;
 }
-.header-container__subctnr .header-title__primary {
+.header-container__subctnr-A .header-title__primary {
   margin: 0;
   font-size: 4.1rem;
   font-family: "Michroma", sans-serif;
@@ -88,14 +96,14 @@
   letter-spacing: 1px;
   line-height: 50px;
 }
-.header-container__subctnr .header-title__secondary {
+.header-container__subctnr-A .header-title__secondary {
   margin: 0;
   font-size: 1.2rem;
   font-family: "Michroma", sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
 }
-.header-container__subctnr .header-title__separate {
+.header-container__subctnr-A .header-title__separate {
   margin-top: 0;
   height: 8px;
   width: 100%;
@@ -103,12 +111,39 @@
   border-radius: 5px;
   background-color: #fff;
 }
-.header-container__subctnr .header-title__tertiary {
+.header-container__subctnr-A .header-title__tertiary {
   margin: 15px;
   font-size: 1rem;
   font-family: "Zalando Sans Expanded", sans-seriff;
   font-weight: 400;
   letter-spacing: 1px;
+}
+.header-container__subctnr-B {
+  height: 13vh;
+  color: #fff;
+  text-align: center;
+}
+.header-container__signup-el {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+.header-container__signup-el:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.header-container__login-el {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+.header-container__login-el:hover {
+  color: #000;
+  text-decoration: underline;
 }
 
 .globale-nav {

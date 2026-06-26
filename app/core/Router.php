@@ -43,6 +43,10 @@ if (file_exists($controllerFile)) {
     $app->dronesPage();
   } elseif ($page === 'Custom') {
     $app->customDronePage();
+  } elseif ($page === 'Login') {
+    $app->loginPage();
+  } elseif ($page === 'Signup') {
+    $app->signupPage();
   }
 } else {
   echo "Controleur introuvable";

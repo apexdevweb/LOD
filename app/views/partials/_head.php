@@ -4,4 +4,4 @@
 <link rel="stylesheet" href="public/assets/CSS/main.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 <link rel="shortcut icon" href="" type="image/x-icon">
-<title>Legion of Drones</title>
+<title>Land of Drones</title>
